@@ -1,0 +1,4 @@
+# Convert the tax amount in words to a string (replace 'tax_amount_in_words' with your actual variable)
+
+tax_amount_in_words_str = str(tax_amount_in_words)
+frappe.db.set_value('Payment Order', doc.name, 'tax_amount_in_words', tax_amount_in_words_str)
